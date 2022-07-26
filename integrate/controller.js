@@ -1,3 +1,4 @@
+var port= process.env.PORT || 8000
 $(document).ready(function () {
     $('#before_upload').show()
     $('#loading_page').hide()
@@ -86,3 +87,8 @@ function errorresponse(message){
 
     return;
 }
+
+// #Added
+server.listen(port,()=>{
+    console.log("server is running")
+});

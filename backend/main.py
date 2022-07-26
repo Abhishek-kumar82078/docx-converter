@@ -12,6 +12,7 @@ app.mount("/output_files", StaticFiles(directory="output_files"), name="media")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True , allow_methods=["*"], allow_headers=["*"])
 
 
+
 SERVER_ADDRESS = "127.0.0.1:8000"
 
 # Setting the required configuration for logging 
