@@ -5,7 +5,7 @@ from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.staticfiles import StaticFiles
 import logging , datetime, time 
 from fastapi.middleware.cors import CORSMiddleware 
-from word2txt_converter import convert_docx2txt
+from word2txt_converter import convert_docx2txt             #Added
 app = FastAPI()
 
 app.mount("/output_files", StaticFiles(directory="output_files"), name="media") 
