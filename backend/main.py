@@ -5,13 +5,29 @@ from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.staticfiles import StaticFiles
 import logging , datetime, time 
 from fastapi.middleware.cors import CORSMiddleware 
-from word2txt_converter import convert_docx2txt             #Added
+# from word2txt_converter import convert_docx2txt             #Added
 app = FastAPI()
 
 app.mount("/output_files", StaticFiles(directory="output_files"), name="media") 
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True , allow_methods=["*"], allow_headers=["*"])
 
+def convert_docx2txt(doc_filepath, txt_filepath):
+    """ convert_docx2txt is a method to convert docx file to text format 
+        which take two paramter sourcefile and destinationfile. """
 
+    logging.info("convert_docx2txt function execution started.")
+
+    try:
+        text = docx2txt.process(doc_filepath)
+
+        with open(txt_filepath,"w",encoding="UTF-8") as ifile:
+            ifile.write(text) # Writing into destination file
+        
+        return True
+
+    except Exception as e:
+        logging.error("Exception occurred", exc_info=True)
+        return False
 
 SERVER_ADDRESS = "127.0.0.1:8000"
 
@@ -83,8 +99,8 @@ def upload_file(upload_file: UploadFile =File(...), required_format: str=Form(..
             if required_format == 'txt':
                 status = convert_docx2txt(src_file_path, dest_file_path)
 
-            elif required_format == 'pdf':
-                status = convert_docx2pdf(src_file_path, dest_file_path)
+            # elif required_format == 'pdf':
+            #     status = convert_docx2pdf(src_file_path, dest_file_path)
             
             else:
                 logging.warning("Required format is not supported.")
