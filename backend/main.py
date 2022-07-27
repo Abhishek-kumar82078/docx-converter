@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import docx2txt
 app = FastAPI()
 
-app.mount("/output_files", StaticFiles(directory="output_files"), name="media") 
+app.mount("//output_files", StaticFiles(directory="output_files"), name="media") 
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True , allow_methods=["*"], allow_headers=["*"])
 
 def convert_docx2txt(doc_filepath, txt_filepath):
