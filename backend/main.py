@@ -1,4 +1,4 @@
-from word2xml.word2xml_converter import convert_docx2xml
+# from word2xml.word2xml_converter import convert_docx2xml
 from word2txt.word2txt_converter import convert_docx2txt
 from word2pdf.word2pdf_converter import convert_docx2pdf
 from fastapi import FastAPI, File, UploadFile, Form
@@ -77,10 +77,10 @@ def upload_file(upload_file: UploadFile =File(...), required_format: str=Form(..
             logging.info(f'Desired format is {required_format}.')
 
             # Calling the right function to convert the file
-            if required_format == 'xml':
-                status = convert_docx2xml(src_file_path, dest_file_path)
+            # if required_format == 'xml':
+            #     status = convert_docx2xml(src_file_path, dest_file_path)
 
-            elif required_format == 'txt':
+            if required_format == 'txt':
                 status = convert_docx2txt(src_file_path, dest_file_path)
 
             elif required_format == 'pdf':
