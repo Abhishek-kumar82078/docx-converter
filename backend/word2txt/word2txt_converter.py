@@ -20,7 +20,7 @@ def convert_docx2txt(doc_filepath, txt_filepath):
         return False
 
 if __name__ == "__main__":
-    convert_docx2txt('.\input_files\sample.docx', '.\output_files\abc.txt') 
+    convert_docx2txt('..\\input_files\\sample.docx', '..\\output_files\\abc.txt') 
     """ Here '.\input_files\sample.docx' is an input which we are interested to convert and 
      '.\output_files\abc.txt' is the output file on which we are going to convert to. """
 

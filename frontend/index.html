@@ -27,9 +27,10 @@
             <p class="drag-drop-tag">Click here or Drag & Drop a docx file </p>
             <!-- <div class="drag-drop-thumb" data-label="myfile.txt"></div> -->
             <input type="file" name="upload_file" class="drag-drop-input" accept="application/msword,
-            application/vnd.openxmlformats-officedocument.wordprocessingml.document" required >
+            application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
           </div>
         </div>
+
 
 
         <div id="right">
@@ -44,13 +45,13 @@
               </label>
             </div>
 
-            <div id="two"> 
+            <div id="two">
                 <label for="PDF">
                 <input type="radio" id="PDF" name="required_format" value="pdf">
                 <img src="image/002-pdf-file2.png" alt="PDF" style="height:105px; width:99px; margin-left: 12px; "> <br>
               </label><br>
             </div>
-              
+
             <div id="three">
 
                 <label for="TXT">
@@ -73,15 +74,14 @@
         </div>
     </form>
   </div>
-  </div>
-
+</div>
   <div id="modal">
     <div class="modal_content">
-        <span class="close"> &times;</span>
-        <p id="msg"></p>
+      <span class="close"> &times;</span>
+      <p id="msg"></p>
     </div>
   </div>
-
+  
   <div id="loading_page">
     <div class="circle">
       <div class="outer">
@@ -105,27 +105,27 @@
     const loader = document.getElementById("loading-content");
     setTimeout(() => {
       loader.innerHTML = "Uploading... 0%";
-    }, 9000+1000);
+    }, 9000 + 1000);
 
     setTimeout(() => {
       loader.innerHTML = "Uploading... 20%";
-    }, 9000+1800);
+    }, 9000 + 1800);
 
     setTimeout(() => {
       loader.innerHTML = "Uploading... 50%";
-    }, 9000+3000);
+    }, 9000 + 3000);
 
     setTimeout(() => {
       loader.innerHTML = "Uploading... 90%";
-    }, 9000+4000);
+    }, 9000 + 4000);
 
     setTimeout(() => {
       loader.innerHTML = "Uploaded Successfullly!";
-    }, 9000+5000);
+    }, 9000 + 5000);
 
     setTimeout(() => {
       loader.innerHTML = "Converting Your File...";
-    }, 9000+5500);
+    }, 9000 + 5500);
   </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

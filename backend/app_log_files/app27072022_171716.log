@@ -1,0 +1,245 @@
+root - INFO - File Read Successfully
+root - INFO - Saving Your File
+root - INFO - File has been saved
+root - INFO - Creating your destination file.
+root - INFO - Desired format is xml.
+root - INFO - convert_docx2xml function execution started.
+root - INFO - Finally, File has been converted successfully.
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[42:61]
+multipart.multipart - DEBUG - Calling on_header_value with data[63:116]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[118:130]
+multipart.multipart - DEBUG - Calling on_header_value with data[132:203]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[207:3614]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[3615:78913]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[78914:89616]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[89617:98304]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:25691]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[25692:25861]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[25862:28726]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[28727:44519]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[44520:80540]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[80584:80603]
+multipart.multipart - DEBUG - Calling on_header_value with data[80605:80638]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[80642:80645]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_end with no data
+root - INFO - File Read Successfully
+root - INFO - Saving Your File
+root - INFO - File has been saved
+root - INFO - Creating your destination file.
+root - INFO - Desired format is pdf.
+root - INFO - convert_docx2pdf function execution started.
+root - INFO - Finally, File has been converted successfully.
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[42:61]
+multipart.multipart - DEBUG - Calling on_header_value with data[63:116]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[118:130]
+multipart.multipart - DEBUG - Calling on_header_value with data[132:203]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[207:40239]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[40240:41377]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[41378:52422]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[52423:63759]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[63760:83321]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[83322:85938]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[85939:128073]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[128074:178844]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[178888:178907]
+multipart.multipart - DEBUG - Calling on_header_value with data[178909:178942]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[178946:178949]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_end with no data
+root - INFO - File Read Successfully
+root - INFO - Saving Your File
+root - INFO - File has been saved
+root - INFO - Creating your destination file.
+root - INFO - Desired format is xml.
+root - INFO - convert_docx2xml function execution started.
+root - INFO - Finally, File has been converted successfully.
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[42:61]
+multipart.multipart - DEBUG - Calling on_header_value with data[63:116]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[118:130]
+multipart.multipart - DEBUG - Calling on_header_value with data[132:203]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[207:83321]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[83322:85938]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[85939:114688]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:64156]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[64200:64219]
+multipart.multipart - DEBUG - Calling on_header_value with data[64221:64254]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[64258:64261]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_end with no data
+root - INFO - File Read Successfully
+root - INFO - Saving Your File
+root - INFO - File has been saved
+root - INFO - Creating your destination file.
+root - INFO - Desired format is pdf.
+root - INFO - convert_docx2pdf function execution started.
+root - INFO - Finally, File has been converted successfully.
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[42:61]
+multipart.multipart - DEBUG - Calling on_header_value with data[63:116]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[118:130]
+multipart.multipart - DEBUG - Calling on_header_value with data[132:203]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[207:69809]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[69810:81920]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:96924]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[96968:96987]
+multipart.multipart - DEBUG - Calling on_header_value with data[96989:97022]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[97026:97029]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_end with no data
+root - INFO - File Read Successfully
+root - INFO - Saving Your File
+root - INFO - File has been saved
+root - INFO - Creating your destination file.
+root - INFO - Desired format is pdf.
+root - INFO - convert_docx2pdf function execution started.
+root - INFO - Finally, File has been converted successfully.
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[42:61]
+multipart.multipart - DEBUG - Calling on_header_value with data[63:116]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[118:130]
+multipart.multipart - DEBUG - Calling on_header_value with data[132:203]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[207:3614]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[3615:16384]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:16384]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:16380]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[16381:16384]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:16384]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:16384]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:38335]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[38336:81920]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:15004]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[15048:15067]
+multipart.multipart - DEBUG - Calling on_header_value with data[15069:15102]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[15106:15109]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_end with no data
+root - INFO - File Read Successfully
+root - INFO - Saving Your File
+root - INFO - File has been saved
+root - INFO - Creating your destination file.
+root - INFO - Desired format is pdf.
+root - INFO - convert_docx2pdf function execution started.
+root - INFO - Finally, File has been converted successfully.
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[42:61]
+multipart.multipart - DEBUG - Calling on_header_value with data[63:116]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[118:130]
+multipart.multipart - DEBUG - Calling on_header_value with data[132:203]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[207:23414]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[23415:147456]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:31388]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[31432:31451]
+multipart.multipart - DEBUG - Calling on_header_value with data[31453:31486]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[31490:31493]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_end with no data
+root - INFO - File Read Successfully
+root - INFO - Saving Your File
+root - INFO - File has been saved
+root - INFO - Creating your destination file.
+root - INFO - Desired format is pdf.
+root - INFO - convert_docx2pdf function execution started.
+root - INFO - Finally, File has been converted successfully.
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[42:61]
+multipart.multipart - DEBUG - Calling on_header_value with data[63:116]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[118:130]
+multipart.multipart - DEBUG - Calling on_header_value with data[132:203]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[207:3614]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[3615:5550]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[5551:16384]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:16384]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:65536]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:16384]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:11755]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:1]
+multipart.multipart - DEBUG - Calling on_part_data with data[11756:16384]
+multipart.multipart - DEBUG - Calling on_part_data with data[0:47772]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_part_begin with no data
+multipart.multipart - DEBUG - Calling on_header_field with data[47816:47835]
+multipart.multipart - DEBUG - Calling on_header_value with data[47837:47870]
+multipart.multipart - DEBUG - Calling on_header_end with no data
+multipart.multipart - DEBUG - Calling on_headers_finished with no data
+multipart.multipart - DEBUG - Calling on_part_data with data[47874:47877]
+multipart.multipart - DEBUG - Calling on_part_end with no data
+multipart.multipart - DEBUG - Calling on_end with no data
+root - INFO - File Read Successfully
+root - INFO - Saving Your File
+root - INFO - File has been saved
+root - INFO - Creating your destination file.
+root - INFO - Desired format is txt.
+root - INFO - convert_docx2txt function execution started.
+root - INFO - Finally, File has been converted successfully.

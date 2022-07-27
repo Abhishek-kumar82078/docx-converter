@@ -16,7 +16,7 @@ def convert_docx2pdf(src_file_path, dest_file_path):
         return False
 
 if __name__ == "__main__":
-    convert_docx2pdf('.\input_files\sample.docx', '.\output_files\abc.pdf') 
+    convert_docx2pdf('..\\input_files\\sample.docx', '..\\output_files\\abc.pdf') 
     """ Here '.\input_files\sample.docx' is an input which we are interested to convert and 
      '.\output_files\abc.pdf' is the output file on which we are going to convert to. """
      
