@@ -47,9 +47,34 @@ Backend part has been implemented using FastAPI. <a href="https://fastapi.tiango
 
 
 To run this project follow the following steps:
-- Activate virtual environment as "venv/scripts/activate" in windows.
-- Install all the requirements as "pip install -r requirements.txt".
-- Run the backend after navigating to backend folder as uvicorn main:app --raload or you can directly run from current directory also but make sure to provide correct path.
-- Open the index.html in frontend folder in your browser and enjoy using the application.
+- Create a virtual environment after deciding a directory where you want to place it, and run the venv module as a script with the directory path:
+```
+      python3 -m venv local-env
+```
 
+- Once you’ve created a virtual environment, activate it as 
+
+```
+      local-env/scripts/activate
+```
+on Windows Or
+```
+      source local-env/bin/activate
+```
+ on Unix or MacOS.
+ 
+ - Installs all of the modules listed in our Python requirements file into your project environment using
+ 
+ ```
+pip install -r requirements.txt
+```
+- Navigate to the backend directory and then run your application using the below command:
+```
+uvicorn main:app --raload
+```
+
+- You can now go to the below url and try uploading the file and format
+```
+http://127.0.0.1:8000/docs
+```
 ## Cheers!
