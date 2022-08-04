@@ -77,4 +77,6 @@ uvicorn main:app --raload
 ```
 http://127.0.0.1:8000/docs
 ```
+<img width="929" alt="image" src="https://user-images.githubusercontent.com/63895917/182897318-83d4a1ef-1f69-4346-bdec-ee742d908ace.png">
+
 ## Cheers!
