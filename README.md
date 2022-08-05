@@ -77,6 +77,21 @@ uvicorn main:app --raload
 ```
 http://127.0.0.1:8000/docs
 ```
+
+- Click on "Try it out" on top right corner as shown in the image.
 <img width="929" alt="image" src="https://user-images.githubusercontent.com/63895917/182897318-83d4a1ef-1f69-4346-bdec-ee742d908ace.png">
 
+- Now choose the file by clicking on "choose File" input, enter the required format and click on "Execute" button.
+<img width="919" alt="image" src="https://user-images.githubusercontent.com/63895917/183115627-d92891e1-92f7-4afb-80a0-536b99d1b34f.png">
+
+- As soon as you click on "Execute" button, program will start its execution and return you a destination file path as the response.
+<img width="915" alt="image" src="https://user-images.githubusercontent.com/63895917/183116362-9043bc2f-ff4e-49ab-bcfd-975245e8c2ff.png">
+
+- Go to the url provided in the response body as above and you will get your converted file. Url is like:
+```
+127.0.0.1:8000/output_files/sample05082022_212849.pdf
+```
+
+
+### Finally your file has been converted.
 ## Cheers!
