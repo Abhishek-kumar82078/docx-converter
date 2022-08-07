@@ -1,15 +1,22 @@
 # Docxconverter
 A full-stack website application to convert a word document into either pdf, XML, or text format. <br>
 Tech stack used : HTML5, CSS3, JavaScript, FastApi, Python, AJAX, jQuery
-### Some highlighted features of this project:-
+### Some highlighted features of this application:-
 - Take a word document and the required format as input.
 - Convert that file into the required format among any of the three formats XML, text, or pdf. 
 - Return the converted file with the same name as that of the input which can be viewed as well as downloaded
 - Releases log messages for every action it starts performing. Hence easy to debug and fix the error when generated.
-<br>
-This also make use of 3 modules - docx2txt==0.8, docx_util & docx2pdf. 
 
-### Steps to be followed to convert your file:-
+
+### This application also make use of 3 modules:-
+- <a href="https://pypi.org/project/docx2txt/"> docx2txt==0.8 </a> for converting to text format
+- <a href="https://pypi.org/project/docx-utils/"> docx_util </a> for converting to XML format
+- <a href="https://pypi.org/project/docx2pdf/"> docx2pdf </a> for converting to pdf format
+
+## This project can be used in two ways. 
+### A. Use the UI to convert your file.<br> B. Use the backend code either to convert your file or use the API to implement your own project.
+
+### 1. Follow the below steps to use the UI to convert your file:- <br>
 - Step 1 : Select the docx file by clicking on the button or drag and drop the file
 <div align="center">
 <img width="409" alt="image" src="https://user-images.githubusercontent.com/63895917/182398096-c60b5438-6940-4f79-8df7-580d36df4a9d.png">
@@ -39,14 +46,14 @@ This also make use of 3 modules - docx2txt==0.8, docx_util & docx2pdf.
 <img width="291" alt="image" src="https://user-images.githubusercontent.com/63895917/182403974-c7cc20b4-0dd9-4e4f-8688-69c94a2174d3.png">
 </div>
 
-### Its backend part can be utilized independently as a module and imported into your project as needed. 
+## Its backend part can be utilized independently as a module and imported into your project as needed. 
 Get the <a href="https://github.com/Abhishek-kumar82078/docx-converter/tree/main/backend"> code here </a>.
 
 Backend part has been implemented using FastAPI. <a href="https://fastapi.tiangolo.com/">FastAPI </a> is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
 
 
+### 2. Follow the below steps to use the backend code to convert your file:
 
-To run this project follow the following steps:
 - Create a virtual environment after deciding a directory where you want to place it, and run the venv module as a script with the directory path:
 ```
       python3 -m venv local-env
@@ -67,6 +74,13 @@ on Windows Or
  
  ```
 pip install -r requirements.txt
+```
+
+- Make a small changes in the main.py file present inside backend directory. Replace
+```
+ return {"Destination File Path": dest_file} 
+ with 
+ return {"Destination File Path": f"{SERVER_ADDRESS}/output_files/{dest_file}"} 
 ```
 - Navigate to the backend directory and then run your application using the below command:
 ```
