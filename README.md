@@ -4,8 +4,8 @@ Tech stack used : HTML5, CSS3, JavaScript, FastApi, Python, AJAX, jQuery
 ### Some highlighted features of this project:-
 - Take a word document and the required format as input.
 - Convert that file into the required format among any of the three formats XML, text, or pdf. 
-- Return the converted file with the same name as that of the input which can be visualized as well as downloaded
-- Releases log messages for every action it start performing. Hence easy to debug anf fix the error when generated.
+- Return the converted file with the same name as that of the input which can be viewed as well as downloaded
+- Releases log messages for every action it starts performing. Hence easy to debug and fix the error when generated.
 <br>
 This also make use of 3 modules - docx2txt==0.8, docx_util & docx2pdf. 
 
@@ -15,12 +15,12 @@ This also make use of 3 modules - docx2txt==0.8, docx_util & docx2pdf.
 <img width="409" alt="image" src="https://user-images.githubusercontent.com/63895917/182398096-c60b5438-6940-4f79-8df7-580d36df4a9d.png">
 </div>
 
-- Step 2 : Choose the required format from xml, pdf, or txt by clicking on their respective image. When it will be selected their will be dark purple background signifing that the format has been choosen. Since, those are radio button only one will be selected at a time. 
+- Step 2 : Choose the required format from XML, pdf, or txt by clicking on their respective image. When it will be selected there will be a dark purple background signifying that the format has been chosen. Since those are radio buttons only one will be selected at a time. 
 <div align="center">
 <img width="340" alt="image" src="https://user-images.githubusercontent.com/63895917/182400569-b7cfbdd4-7b64-4ced-8368-14c50cbc223f.png">
 </div>
 
-- Step 3 : Click on convert button and it will start converting your file landing you to the loading page.
+- Step 3 : Click on the convert button and it will start converting your file landing you on the loading page.
 <div align="center">
 <img width="227" alt="image" src="https://user-images.githubusercontent.com/63895917/182402923-bfac4550-ee2b-4176-aa88-59ee7b13afe3.png">
 </div>
@@ -34,7 +34,7 @@ This also make use of 3 modules - docx2txt==0.8, docx_util & docx2pdf.
 <img width="466" alt="image" src="https://user-images.githubusercontent.com/63895917/182403708-8383b61b-bd1b-4729-8806-b08ec4a61381.png">
 </div>
 
-- Step 5 : Finally, you can download your converted file by clicking on download button.
+- Step 5 : Finally, you can download your converted file by clicking on the download button.
 <div align="center">
 <img width="291" alt="image" src="https://user-images.githubusercontent.com/63895917/182403974-c7cc20b4-0dd9-4e4f-8688-69c94a2174d3.png">
 </div>
@@ -63,7 +63,7 @@ on Windows Or
 ```
  on Unix or MacOS.
  
- - Installs all of the modules listed in our Python requirements file into your project environment using
+ - Installs all of the modules listed in my Python requirements file into your project environment using
  
  ```
 pip install -r requirements.txt
@@ -73,25 +73,25 @@ pip install -r requirements.txt
 uvicorn main:app --raload
 ```
 
-- You can now go to the below url and try uploading the file and format
+- You can now go to the below URL and try uploading the file and format
 ```
 http://127.0.0.1:8000/docs
 ```
 
-- Click on "Try it out" on top right corner as shown in the image.
+- Click on "Try it out" in top right corner as shown in the image.
 <img width="929" alt="image" src="https://user-images.githubusercontent.com/63895917/182897318-83d4a1ef-1f69-4346-bdec-ee742d908ace.png">
 
-- Now choose the file by clicking on "choose File" input, enter the required format and click on "Execute" button.
+- Now choose the file by clicking on "Choose File" input, enter the required format, and click on the "Execute" button.
 <img width="919" alt="image" src="https://user-images.githubusercontent.com/63895917/183115627-d92891e1-92f7-4afb-80a0-536b99d1b34f.png">
 
-- As soon as you click on "Execute" button, program will start its execution and return you a destination file path as the response.
+- As soon as you click on the "Execute" button, the program will start its execution and return you a destination file path as the response.
 <img width="915" alt="image" src="https://user-images.githubusercontent.com/63895917/183116362-9043bc2f-ff4e-49ab-bcfd-975245e8c2ff.png">
 
-- Go to the url provided in the response body as above and you will get your converted file. Url is like:
+- Go to the URL provided in the response body as above and you will get your converted file. Url is like:
 ```
 127.0.0.1:8000/output_files/sample05082022_212849.pdf
 ```
 
 
-### Finally your file has been converted.
+### Finally, your file has been converted.
 ## Cheers!
