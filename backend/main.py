@@ -1,12 +1,12 @@
-from word2xml.word2xml_converter import convert_docx2xml
-from word2txt.word2txt_converter import convert_docx2txt
-from word2pdf.word2pdf_converter import convert_docx2pdf
+from backend.word2xml.word2xml_converter import convert_docx2xml
+from backend.word2txt.word2txt_converter import convert_docx2txt
+from backend.word2pdf.word2pdf_converter import convert_docx2pdf
 from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.staticfiles import StaticFiles
 import logging , datetime, time 
 from fastapi.middleware.cors import CORSMiddleware 
 
-app = FastAPI()
+app = FastAPI(title="Docxconverter")
 
 app.mount("/output_files", StaticFiles(directory="output_files"), name="media") 
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True , allow_methods=["*"], allow_headers=["*"])
@@ -56,7 +56,7 @@ def create_dest_file(uploaded_file: UploadFile, req_format):
 
 
 
-@app.post("/upload-file")
+@app.post("/upload-file", tags=["Converter"])
 def upload_file(upload_file: UploadFile =File(...), required_format: str=Form(...) ):
     
     set_logging_config() 
@@ -103,7 +103,7 @@ def upload_file(upload_file: UploadFile =File(...), required_format: str=Form(..
 
     if status:    
         # return {"Destination File Path": f"{SERVER_ADDRESS}/output_files/{dest_file}"} 
-        return {"Destination File Path": dest_file}; 
+        return {"Destination File Path": dest_file}
     return "Found some error"
 
 
