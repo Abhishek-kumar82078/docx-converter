@@ -1,6 +1,6 @@
-from backend.word2xml.word2xml_converter import convert_docx2xml
-from backend.word2txt.word2txt_converter import convert_docx2txt
-from backend.word2pdf.word2pdf_converter import convert_docx2pdf
+from word2xml.word2xml_converter import convert_docx2xml
+from word2txt.word2txt_converter import convert_docx2txt
+from word2pdf.word2pdf_converter import convert_docx2pdf
 from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.staticfiles import StaticFiles
 import logging , datetime, time 
