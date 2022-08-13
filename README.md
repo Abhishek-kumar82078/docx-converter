@@ -1,6 +1,7 @@
-# Docxconverter
-A full-stack website application to convert a word document into either pdf, XML, or text format. <br>
-Tech stack used : HTML5, CSS3, JavaScript, FastApi, Python, AJAX, jQuery
+# Docx_Converter
+A full-stack website application to convert a word document into either pdf, XML, or text format. <br> 
+<br>
+ Tech stack  : <I> HTML5, CSS3, JavaScript, FastApi, Python, AJAX, jQuery </I>
 ### Some highlighted features of this application:-
 - Take a word document and the required format as input.
 - Convert that file into the required format among any of the three formats XML, text, or pdf. 
@@ -14,7 +15,9 @@ Tech stack used : HTML5, CSS3, JavaScript, FastApi, Python, AJAX, jQuery
 - <a href="https://pypi.org/project/docx2pdf/"> docx2pdf </a> for converting to pdf format
 
 ## This project can be used in two ways. 
-### A. Use the UI to convert your file.<br> B. Use the backend code either to convert your file or use the API to implement your own project.
+### A. Use the UI to convert your file.
+
+### B. Use the backend code either to convert your file or use the API to implement your own project.
 
 ### 1. Follow the below steps to use the UI to convert your file:- <br>
 - Step 1 : Select the docx file by clicking on the button or drag and drop the file
@@ -46,7 +49,7 @@ Tech stack used : HTML5, CSS3, JavaScript, FastApi, Python, AJAX, jQuery
 <img width="291" alt="image" src="https://user-images.githubusercontent.com/63895917/182403974-c7cc20b4-0dd9-4e4f-8688-69c94a2174d3.png">
 </div>
 
-## Its backend part can be utilized independently as a module and imported into your project as needed. 
+## Its backend part can be utilized independently as a API and imported into your project as needed. 
 Get the <a href="https://github.com/Abhishek-kumar82078/docx-converter/tree/main/backend"> code here </a>.
 
 Backend part has been implemented using FastAPI. <a href="https://fastapi.tiangolo.com/">FastAPI </a> is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
@@ -59,16 +62,15 @@ Backend part has been implemented using FastAPI. <a href="https://fastapi.tiango
       python3 -m venv local-env
 ```
 
-- Once you’ve created a virtual environment, activate it as 
+- Once you’ve created a virtual environment, follow below command on Windows to activate it as 
 
 ```
       local-env/scripts/activate
 ```
-on Windows Or
+ Or on Unix or MacOS.
 ```
       source local-env/bin/activate
 ```
- on Unix or MacOS.
  
  - Installs all of the modules listed in my Python requirements file into your project environment using
  
@@ -86,7 +88,7 @@ pip install -r requirements.txt
 ```
 - Navigate to the backend directory and then run your application using the below command:
 ```
-uvicorn main:app --raload
+uvicorn main:app --reload
 ```
 
 - You can now go to the below URL and try uploading the file and format
