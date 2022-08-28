@@ -1,10 +1,6 @@
-
-import os, sys 
-sys.path.append('C:\\Web Development Folder New\\MIND- Engage-Elevate\\docx-converter\\backend')
-sys.path.append('C:\\Web Development Folder New\\MIND- Engage-Elevate\\docx-converter')
-from backend.word2xml.word2xml_converter import convert_docx2xml
-from backend.word2txt.word2txt_converter import convert_docx2txt
-from backend.word2pdf.word2pdf_converter import convert_docx2pdf
+from word2xml.word2xml_converter import convert_docx2xml
+from word2txt.word2txt_converter import convert_docx2txt
+from word2pdf.word2pdf_converter import convert_docx2pdf
 from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.staticfiles import StaticFiles
 import logging , datetime, time
@@ -12,20 +8,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Docxconverter")
 
-
-
-# print(sys.path)
-# app.mount(".\\output_files", StaticFiles(directory="\\backend\\output_files"), name="media") 
+app.mount(".\\output_files", StaticFiles(directory="\\backend\\output_files"), name="media") 
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True , allow_methods=["*"], allow_headers=["*"])
 
-
 SERVER_ADDRESS = "127.0.0.1:8000"
-
-print(os.getcwd())
-if os.getcwd() == 'C:\Web Development Folder New\MIND- Engage-Elevate\docx-converter':
-    prev_path = ".\\backend" 
-else:
-    prev_path = "."    
 
 # Setting the required configuration for logging 
 def set_logging_config():
@@ -66,8 +52,6 @@ def create_dest_file(uploaded_file: UploadFile, req_format):
     dest_file =  dest_file + time  +'.' + req_format 
     dest_file_path = f".\\output_files\\{dest_file}"
     return dest_file_path
-
-
 
 @app.post("/upload-file", tags=["Converter"])
 def upload_file(upload_file: UploadFile =File(...), required_format: str=Form(...) ):
