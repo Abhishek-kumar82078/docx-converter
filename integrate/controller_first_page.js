@@ -1,4 +1,3 @@
-// var port= process.env.PORT || 8000
 $(document).ready(function () {
     $('#before_upload').show()
     $('#loading_page').hide()
@@ -31,7 +30,6 @@ $(document).ready(function () {
         var form = $('#fileUploadForm')[0];
         var dataarr=$('form').serializeArray();
         var data = new FormData(form);
-        // console.log(hello'); 
         var ajxreq=$.ajax({ 
             type: "POST",
             enctype: 'multipart/form-data',
@@ -87,8 +85,3 @@ function errorresponse(message){
 
     return;
 }
-
-// #Added
-// server.listen(port,()=>{
-//     console.log("server is running")
-// });

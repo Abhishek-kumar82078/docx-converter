@@ -1,18 +1,31 @@
+
+import os, sys 
+sys.path.append('C:\\Web Development Folder New\\MIND- Engage-Elevate\\docx-converter\\backend')
+sys.path.append('C:\\Web Development Folder New\\MIND- Engage-Elevate\\docx-converter')
 from backend.word2xml.word2xml_converter import convert_docx2xml
 from backend.word2txt.word2txt_converter import convert_docx2txt
 from backend.word2pdf.word2pdf_converter import convert_docx2pdf
 from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.staticfiles import StaticFiles
-import logging , datetime, time 
+import logging , datetime, time
 from fastapi.middleware.cors import CORSMiddleware 
 
 app = FastAPI(title="Docxconverter")
 
-app.mount("/output_files", StaticFiles(directory="output_files"), name="media") 
+
+
+# print(sys.path)
+# app.mount(".\\output_files", StaticFiles(directory="\\backend\\output_files"), name="media") 
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True , allow_methods=["*"], allow_headers=["*"])
 
 
 SERVER_ADDRESS = "127.0.0.1:8000"
+
+print(os.getcwd())
+if os.getcwd() == 'C:\Web Development Folder New\MIND- Engage-Elevate\docx-converter':
+    prev_path = ".\\backend" 
+else:
+    prev_path = "."    
 
 # Setting the required configuration for logging 
 def set_logging_config():
@@ -23,7 +36,7 @@ def set_logging_config():
     time = datetime.datetime.now()
     time=time.strftime("%d%m%Y_%H%M%S")
     log_filename = 'app'+ time  +'.log'
-    log_file_path = f"app_log_files/{log_filename}"
+    log_file_path = f".\\backend\\app_log_files\\{log_filename}"
     # Defining the filename & filemode for log and formate how will it write in log file
     logging.basicConfig(filename= log_file_path, filemode='a', format='%(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
     return
@@ -33,7 +46,7 @@ def save_input_file(uploaded_file: UploadFile = File(...)):
     logging.info("Saving Your File")
     try:
         global src_file_path
-        src_file_path = f"input_files\{uploaded_file.filename}"
+        src_file_path = f".\\input_files\\{uploaded_file.filename}"
         with open(src_file_path , 'wb+') as input_file:
             content=uploaded_file.file.read()
             input_file.write(content)
@@ -51,7 +64,7 @@ def create_dest_file(uploaded_file: UploadFile, req_format):
     dest_file = file_name.split('.') 
     dest_file = dest_file[0]
     dest_file =  dest_file + time  +'.' + req_format 
-    dest_file_path = f"output_files\{dest_file}"
+    dest_file_path = f".\\output_files\\{dest_file}"
     return dest_file_path
 
 
@@ -63,7 +76,8 @@ def upload_file(upload_file: UploadFile =File(...), required_format: str=Form(..
    
     valid_document_types = ['application/vnd.openxmlformats-officedocument.wordprocessingml.document']
 
-    global status
+    global status 
+    status = False
 
     # Validating the file format
     if upload_file.content_type in valid_document_types:

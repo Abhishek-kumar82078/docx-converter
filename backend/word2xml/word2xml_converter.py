@@ -17,6 +17,6 @@ def convert_docx2xml(src_file, dest_file):
 
 if __name__ == "__main__":
     convert_docx2xml('..\\input_files\\sample.docx', '..\\output_files\\abc.xml') 
-    """ Here '.\input_files\sample.docx' is an input which we are interested to convert and 
-     '.\output_files\abc.xml' is the output file on which we are going to convert to. """
+    #  Here '.\input_files\sample.docx' is an input which we are interested to convert and 
+    #  '.\output_files\abc.xml' is the output file on which we are going to convert to. 
 

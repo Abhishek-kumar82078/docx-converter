@@ -36,21 +36,11 @@ document.querySelectorAll(".drag-drop-input").forEach((inputElement) => {
   dragDropElement.classList.remove("drag-drop-over");
 });
 
-
-
-
-
-
-
-
-
- 
 function updatethumbnail(dragDropElement, file) {
   let thumbnailElement = dragDropElement.querySelector(".drag-drop-thumb");
 
   if (file.type=="application/vnd.openxmlformats-officedocument.wordprocessingml.document") {
     const reader = new FileReader();
-    console.log("Hello");
     reader.readAsDataURL(file);
     reader.onload = () => {
 
@@ -67,7 +57,7 @@ function updatethumbnail(dragDropElement, file) {
         dragDropElement.appendChild(thumbnailElement);
       }
 
-      thumbnailElement.style.backgroundImage = `url('image/docs.png')`;
+      thumbnailElement.style.backgroundImage = `url('assets/image/docs.png')`;
       thumbnailElement.dataset.label = file.name;
       
     };
@@ -77,3 +67,27 @@ function updatethumbnail(dragDropElement, file) {
 
 }
 
+const loader = document.getElementById("loading-content");
+    setTimeout(() => {
+      loader.innerHTML = "Uploading... 0%";
+    }, 9000 + 1000);
+
+    setTimeout(() => {
+      loader.innerHTML = "Uploading... 20%";
+    }, 9000 + 1800);
+
+    setTimeout(() => {
+      loader.innerHTML = "Uploading... 50%";
+    }, 9000 + 3000);
+
+    setTimeout(() => {
+      loader.innerHTML = "Uploading... 90%";
+    }, 9000 + 4000);
+
+    setTimeout(() => {
+      loader.innerHTML = "Uploaded Successfullly!";
+    }, 9000 + 5000);
+
+    setTimeout(() => {
+      loader.innerHTML = "Converting Your File...";
+    }, 9000 + 5500);
