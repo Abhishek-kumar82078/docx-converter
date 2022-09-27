@@ -2,7 +2,7 @@ body{
     width:100vw;
     height:100vh;
     background-color: white ;
-    background-image: url(image/background.png);
+    background-image: url(assets/image/background.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
