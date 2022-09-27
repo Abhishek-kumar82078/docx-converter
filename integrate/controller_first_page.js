@@ -83,5 +83,7 @@ function errorresponse(message){
     }
     }
 
+    $('#before_upload').show();
+
     return;
 }
